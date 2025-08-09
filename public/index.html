@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IG Dashboard (Railway-ready)</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand">IG Classy Dashboard</div>
+    <div id="stats">DMS:0 • Follows:0 • Req:0</div>
+  </div>
+  <div class="container">
+    <div class="card controls">
+      <input id="backendUrl" placeholder="Backend URL (auto if same host)" value="" />
+      <button id="connect">Connect</button>
+    </div>
+    <div class="card bots" id="bots"></div>
+    <div class="card upload">
+      <input type="file" id="file" />
+      <button id="uploadBtn">Upload & Send</button>
+    </div>
+    <pre id="log" class="log"></pre>
+  </div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
